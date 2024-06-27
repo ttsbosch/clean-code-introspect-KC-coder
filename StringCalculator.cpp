@@ -37,12 +37,13 @@ int StringCalculator::getValidIntergersOfString(int &postion , const string &str
             return 0;
         } 
     }
+    return value;
 }
 
 bool StringCalculator::isPositiveNumber(int postion , const string &str )
 {
     bool isPositive = false;
-    if((postion - 1) < 0 ) //to prevent NULL exception
+    if((postion - 1) == 0 ) //to prevent NULL exception
     {
       if(str[postion - 1] == '-')
       {
