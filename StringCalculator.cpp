@@ -30,12 +30,8 @@ int StringCalculator::add(string str)
     {
        if (isdigit(str[i]))
         {
-          int value = (str[i] - 48);
-          if(value < 0)
-          {
-            throw  std::runtime_error("Negative number in string");
-            return 0;
-          }
+        std::cout << "str[i]= " << str[i] << " || i = "<<i <<endl;
+          int value = getValueofNumber(i, str);
           finalValue +=value;
         }
     }
