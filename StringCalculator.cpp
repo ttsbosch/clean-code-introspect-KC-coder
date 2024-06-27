@@ -14,7 +14,7 @@ int StringCalculator::add(string str)
           {
             return std::runtime_error;
           }
-          finalValue +=value
+          finalValue +=value;
         }
     }
   return finalValue;
