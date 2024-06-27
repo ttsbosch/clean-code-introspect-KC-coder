@@ -2,7 +2,7 @@
 
 using namespace std;
 
-StringCalculator::add(string str)
+int StringCalculator::add(string str)
 {
   return str.size();
 }
