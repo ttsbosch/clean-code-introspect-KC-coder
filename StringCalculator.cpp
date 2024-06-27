@@ -9,7 +9,7 @@ int StringCalculator::add(string str)
     {
        if (isdigit(str[i]))
         {
-          value += str[i];
+          value += (str[i] - 48);
         }
     }
   return value;
