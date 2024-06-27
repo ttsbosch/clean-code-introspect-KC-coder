@@ -3,7 +3,7 @@
 
 class StringCalculator {
 public:
-  add(int x, int y);
+  int add(std::string input);
 }
 
 
