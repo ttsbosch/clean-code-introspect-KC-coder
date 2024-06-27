@@ -58,14 +58,10 @@ int StringCalculator::add(string str)
   int finalValue = 0;
   for(int i = 0 ; i < str.size() ; ++i)
     {
-       if (isdigit(str[i]))
+       if (isdigit(str[i]) && isPositiveNumber(i, str))
         {
         std::cout << "str[i]= " << str[i] << " || i = "<<i <<endl;
-          bool isPositive = isPositiveNumber(i, str);
-          if (isPositive)
-          {
               finalValue +=getValidIntergersOfString(i, str); 
-          }
         }
     }
   return finalValue;
