@@ -1,6 +1,8 @@
 #include "StringCalculator.h"
 
-StringCalculator::add(int x, inty)
+using namespace std;
+
+StringCalculator::add(string str)
 {
-  return x+y;
+  return str.size();
 }
