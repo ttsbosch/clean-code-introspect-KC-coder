@@ -9,7 +9,7 @@ int StringCalculator::add(string str)
     {
        if (isdigit(str[i]))
         {
-          value += atoi (str);
+          value += str[i];
         }
     }
   return value;
