@@ -4,13 +4,18 @@ using namespace std;
 
 int StringCalculator::add(string str)
 {
-  int value = 0;
+  int finalValue = 0;
   for(int i = 0 ; i < str.size() ; ++i)
     {
        if (isdigit(str[i]))
         {
-          value += (str[i] - 48);
+          int value = (str[i] - 48);
+          if(value < 0)
+          {
+            return std::runtime_error;
+          }
+          finalValue +=value
         }
     }
-  return value;
+  return finalValue;
 }
