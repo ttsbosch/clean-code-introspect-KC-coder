@@ -5,7 +5,9 @@ class StringCalculator {
 public:
   int add(std::string input);
 private:
-  int getValueofNumber(int postion , const std::string &str );
+  int getValueOfInterger(int &postion , const std::string &str );
+  int getValidIntergersOfString(int &postion , const std::string &str);
+  bool isPositiveNumber(int postion , const std::string &str );
 };
 
 
