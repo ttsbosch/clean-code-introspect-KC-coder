@@ -5,7 +5,7 @@ class StringCalculator {
 public:
   int add(std::string input);
 private:
-  int getValueofNumber(int postion , const string &str );
+  int getValueofNumber(int postion , const std::string &str );
 };
 
 
