@@ -12,7 +12,8 @@ int StringCalculator::add(string str)
           int value = (str[i] - 48);
           if(value < 0)
           {
-            return std::runtime_error;
+            throw  std::runtime_error("Negative number in string");
+            return 0;
           }
           finalValue +=value;
         }
