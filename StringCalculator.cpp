@@ -24,14 +24,18 @@ int StringCalculator::getValueOfInterger(int &postion , const string &str )
 }
 int StringCalculator::getValidIntergersOfString(int &postion , const string &str)
 {
-    int value = getValueOfInterger(postion ,str );
-    if(value < 1000)
+    int value = 0;
+    if(isPositiveNumber(postion, str))
     {
-        return value;
-    }
-    else
-    {
-        return 0;
+       int value = getValueOfInterger(postion ,str );
+        if(value < 1000  )
+        {
+            return value;
+        }
+        else
+        {
+            return 0;
+        } 
     }
 }
 
@@ -58,7 +62,7 @@ int StringCalculator::add(string str)
   int finalValue = 0;
   for(int i = 0 ; i < str.size() ; ++i)
     {
-       if (isdigit(str[i]) && isPositiveNumber(i, str))
+       if (isdigit(str[i]))
         {
         std::cout << "str[i]= " << str[i] << " || i = "<<i <<endl;
               finalValue +=getValidIntergersOfString(i, str); 
